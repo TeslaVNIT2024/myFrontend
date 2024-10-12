@@ -6,10 +6,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover; /* The image covers the whole page */
   background-position: center;
-  padding:10px;
   background-attachment: fixed; /* The image stays fixed during scroll */
 }
-
+@media only screen and (max-width:768px){
+  body{
+    bacground-size:100% auto;
+    background-position: top center;
+  }
+}
 
 header {
     display:;
