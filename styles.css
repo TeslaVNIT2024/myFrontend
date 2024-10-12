@@ -10,7 +10,7 @@ body {
 }
 @media only screen and (max-width:768px){
   body{
-    bacground-size:100% auto;
+    bacground-size:768px;
     background-position: top center;
   }
 }
