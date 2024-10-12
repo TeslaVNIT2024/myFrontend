@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESLA Club VNIT Nagpur - Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TESLA Club VNIT Nagpur</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="council.html">Council</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="Achievements.html">Achievements</a></li>
+                <li><a href="photos.html">Gallery</a></li>
+                <li><a href="registration.html">Recruitment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="registration-form">
+        <h2>Registration Form</h2>
+        <p>Please fill out the form below to register:</p>
+
+        <form id="registration-form">
+            <!-- First Name -->
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" placeholder="Your name" required>
+        
+            <!-- Last Name -->
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" placeholder="Your last name" required>
+            
+            <!-- Degree -->
+            <label for="degree">Degree</label>
+            <select id="degree" name="degree" required>
+                <option value="" disabled selected>Select your Degree</option>
+                <option value="BTech">BTech</option>
+                <option value="MTech">MTech</option>
+                <option value="PhD">PhD</option>
+                <option value="BArch">BArch</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Year -->
+            <label for="year">Year</label>
+            <select id="year" name="year" required>
+                <option value="" disabled selected>Select your year</option>
+                <option value="First Year">First Year</option>
+                <option value="Second Year">Second Year</option>
+                <option value="Third Year">Third Year</option>
+                <option value="Fourth Year">Fourth Year</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Branch -->
+            <label for="branch">Branch</label>
+            <input type="text" id="branch" name="branch" placeholder="Your branch" required>
+
+            <!-- CGPA -->
+            <label for="cgpa">CGPA</label>
+            <input type="number" id="cgpa" name="cgpa" placeholder="Your CGPA" required min="0" max="10" step="0.01">
+
+            <!-- Skills Section -->
+            <div style="padding: 20px; background: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 400px; margin: 0 auto;">
+                <h2 style="font-size: 18px; font-weight: 600; color: #333; margin-bottom: 15px;">Select Your Skills:</h2>
+                
+                <div style="margin-bottom: 15px;">
+                    <label style="display: flex; align-items: center; margin-bottom: 8px;">
+                        <span style="color: #555; flex: 1;">Microcontroller/IOT</span>
+                        <input type="checkbox" name="skill" value="Microcontroller/IOT">
+                    </label>
+                    <label style="display: flex; align-items: center; margin-bottom: 8px;">
+                        <span style="color: #555; flex: 1;">Matlab/Multisim/Simulation Software</span>
+                        <input type="checkbox" name="skill" value="Matlab/Multisim/Simulation Software">
+                    </label>
+                    <label style="display: flex; align-items: center; margin-bottom: 8px;">
+                        <span style="color: #555; flex: 1;">SolidWorks/Fusion 360</span>
+                        <input type="checkbox" name="skill" value="SolidWorks/Fusion 360">
+                    </label>
+                    <label style="display: flex; align-items: center; margin-bottom: 8px;">
+                        <span style="color: #555; flex: 1;">Ansys</span>
+                        <input type="checkbox" name="skill" value="Ansys">
+                    </label>
+                    <label style="display: flex; align-items: center; margin-bottom: 8px;">
+                        <span style="color: #555; flex: 1;">PCB Design</span>
+                        <input type="checkbox" name="skill" value="PCB Design">
+                    </label>
+                    <label style="display: flex; align-items: center; margin-bottom: 8px;">
+                        <span style="color: #555; flex: 1;">Soldering</span>
+                        <input type="checkbox" name="skill" value="Soldering">
+                    </label>
+                    <label style="display: flex; align-items: center; margin-bottom: 8px;">
+                        <span style="color: #555; flex: 1;">Video Editing/Graphic Design</span>
+                        <input type="checkbox" name="skill" value="Video Editing/Graphic Design">
+                    </label>
+                    <label style="display: flex; align-items: center; margin-bottom: 8px;">
+                        <span style="color: #555; flex: 1;">Web Development/App Development</span>
+                        <input type="checkbox" name="skill" value="Web Development/App Development">
+                    </label>
+                    <label style="display: flex; align-items: center; margin-bottom: 8px;">
+                        <span style="color: #555; flex: 1;">Sponsorship</span>
+                        <input type="checkbox" name="skill" value="Sponsorship">
+                    </label>
+                    <label style="display: flex; align-items: center; margin-bottom: 8px;">
+                        <span style="color: #555; flex: 1;">Other:</span>
+                        <input type="checkbox" name="skill" value="Other" id="other-skill">
+                    </label>
+                    <input type="text" name="otherSkill" placeholder="Enter your other skills" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;" id="otherSkillInput" disabled>
+                </div>
+            </div>
+
+            <script>
+                const otherSkillCheckbox = document.getElementById('other-skill');
+                const otherSkillInput = document.getElementById('otherSkillInput');
+              
+                otherSkillCheckbox.addEventListener('change', () => {
+                    otherSkillInput.disabled = !otherSkillCheckbox.checked;
+                    if (!otherSkillCheckbox.checked) {
+                        otherSkillInput.value = '';
+                    }
+                });
+            </script>
+
+            <!-- Email -->
+            <label for="email">Your Email*</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+        
+            <!-- Message -->
+            <label for="project">Project</label>
+            <textarea id="project" name="project" placeholder="Description of your project" required></textarea>
+        
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+        
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left">
+                <p>Contact Us</p>
+                <p class="contacts">Email: teslavnit@gmail.com</p>
+                <p class="contacts">Instagram: <a href="https://www.instagram.com/teslavnit/">teslavnit</a></p>
+                <p class="contacts">LinkedIn: <a href="https://in.linkedin.com/company/tesla-club-of-innovation">teslaclubofinnovation</a></p>
+                <p class="contacts">Phone: Rushikesh: 9765862386</p>
+                <p class="contacts">Gaurav: 9779864700</p>
+                <p class="contacts">Vaibhav: 7038736052</p>
+                <p>&copy; 2024 TESLA Club VNIT Nagpur</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const yearInput = document.getElementById('year').value;
+            
+            const yearMap = {
+                "First Year": 1,
+                "Second Year": 2,
+                "Third Year": 3,
+                "Fourth Year": 4,
+                "Other": 0
+            };
+            const year = yearMap[yearInput];
+
+            const formData = {
+                first_name: document.getElementById('first-name').value,
+                last_name: document.getElementById('last-name').value,
+                degree: document.getElementById('degree').value,
+                year: year,
+                branch: document.getElementById('branch').value,
+                cgpa: document.getElementById('cgpa').value,
+                skills: Array.from(document.querySelectorAll('input[name="skill"]:checked')).map(input => input.value),
+                email: document.getElementById('email').value,
+                project: document.getElementById('project').value
+            };
+
+            try {
+                const response = await fetch('http://localhost:5000/students/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    alert('Registration successful!');
+                    document.getElementById('registration-form').reset();
+                } else {
+                    alert('Registration failed!');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred during registration. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>

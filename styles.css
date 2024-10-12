@@ -1,0 +1,381 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  background-image: url('./logoclub.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /* The image covers the whole page */
+  background-position: center;
+  background-attachment: fixed; /* The image stays fixed during scroll */
+}
+
+
+header {
+    display:;
+    background-color: rgba(90, 172, 240, 0.5); /* Light blue color with 80% opacity */
+    padding: 30px; /
+    text-align: center; 
+    color: #ffffff; 
+
+    
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points from list */
+    padding: 10; /* Remove default padding */
+    margin: 200; /* Remove default margin */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline for horizontal menu */
+    margin-right: 15px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: #ffffff; /* Text color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make the navigation text bold */
+}
+
+
+
+
+/* styles.css */
+.content {
+    background-color: rgba(255, 255, 255, 0.5); /* White background with 50% opacity */
+    padding: 20px; /* Optional: Adjust padding */
+    border: 1px solid #ccc;
+    font-size: 18px; /* Optional: Border to make the section more visible */
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color:rgba(90, 172, 240, 0.5);
+  position: relative;
+}
+
+.left {
+  max-width: 50%;
+}
+
+.right {
+  max-width: 45%;
+  text-align: right;
+}
+
+.contacts {
+  margin: 5px 0;
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .left, .right {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  iframe {
+      width: 100%;
+  }
+}
+
+
+footer {
+    background-color:  rgba(90, 172, 240, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+#slider figure{
+    
+    
+    height: 300px;
+}
+.contacts{
+    color: #ffffff; /* Text color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; 
+    text-align: left;
+
+}
+.achievements-section {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+    padding: 50px 20px;
+  }
+  
+  .achievements-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .achievements-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .achievement-card {
+    background-color: #222; /* Slightly lighter background for the card */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .achievement-card h3 {
+    background-color: #3cb5ea; /* Light blue background for the title */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+  
+  .achievement-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px 0;
+  }
+  
+  .achievement-card p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  .council-section {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .council-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .council-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .member-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .card {
+    background-color: white;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .member-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  .card img {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .member-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .member-card p {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  
+  .member-card a {
+    color: #3cb5ea;
+    text-decoration: none;
+  }
+  
+  .member-card a:hover {
+    text-decoration: underline;
+  }
+  /* Header Styles */
+nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+  }
+  
+  nav ul li:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+  }
+  
+  .dropdown li {
+    display: block;
+  }
+  
+  .dropdown li a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .dropdown li a:hover {
+    background-color: #575757;
+  }
+  
+  /* Section styles */
+  section {
+    padding: 10px 20px;
+    
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+  }
+  .registration-form {
+    background-color: rgba(255, 255, 255, 0.6); /* White with transparency */
+    color: #001f7f; /* Dark blue text */
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h2 {
+    text-align: center;
+    color: #001f7f;
+    margin-bottom: 20px;
+}
+
+.registration-form p {
+    text-align: center;
+    color: #001f7f;
+    margin-bottom: 30px;
+}
+
+/* Form Labels */
+.registration-form label {
+    display: block;
+    font-size: 16px;
+    color: #001f7f; /* Dark blue text */
+    margin-top: 15px;
+}
+
+/* Input Fields */
+.registration-form input,
+.registration-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #001f7f; /* Blue border */
+    background-color: rgba(255, 255, 255, 0.9); /* Almost white background with a bit of transparency */
+    font-size: 16px;
+    color: #001f7f;
+}
+
+/* Submit Button */
+.registration-form button {
+    margin-top: 20px;
+    background-color: #001f7f; /* Dark blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.registration-form button:hover {
+    background-color: #0050d1; /* Slightly lighter blue on hover */
+}
+.gallery-section {
+  text-align: center;
+  margin: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.media-item img,
+.media-item video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

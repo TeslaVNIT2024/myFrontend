@@ -1,0 +1,36 @@
+// server.js
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const fs = require('fs'); // To store data into files (or you can use a database)
+const app = express();
+const PORT = 3000;
+
+// Middleware to parse form data
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// Serve the registration form (assuming your form is in a file named registration.html)
+app.use(express.static('public'));
+
+// POST route to handle form submission
+app.post('/submit_registration', (req, res) => {
+    const { first_name, last_name, email, message } = req.body;
+
+    // You can store this data in a database, but for simplicity, we'll write it to a file
+    const formData = `Name: ${first_name} ${last_name}\nEmail: ${email}\nMessage: ${message}\n\n`;
+
+    // Write data to a file (or connect to a database)
+    fs.appendFile('registrations.txt', formData, (err) => {
+        if (err) {
+            console.error('Failed to save data', err);
+            return res.status(500).send('Server Error');
+        }
+
+        res.send('Registration successful!');
+    });
+});
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
