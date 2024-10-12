@@ -6,7 +6,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover; /* The image covers the whole page */
   background-position: center;
-  background-height: 100%;
+  padding:10px;
   background-attachment: fixed; /* The image stays fixed during scroll */
 }
 
