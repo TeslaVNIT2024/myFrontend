@@ -1,100 +1,131 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>TESLA Club VNIT Learn Section</title>  
-    <link rel="stylesheet" href="styles.css">  
-</head>  
-<body>  
-    <header>  
-        <div class="logo">  
-            <img src="tesla-logo.png" alt="Logo" class="logo-img">  
-            <span class="logo-text">TESLA Club VNIT Nagpur</span>  
-        </div>  
-        <nav>  
-            <ul>  
-                <li><a href="index.html">Home</a></li>  
-                <li><a href="council.html">Council</a></li>  
-                <li><a href="projects.html">Projects</a></li>  
-                <li><a href="achievements.html">Achievements</a></li>  
-                <li><a href="photos.html">Gallery</a></li> 
-                <li><a href="learn.html">Learn</a></li> 
-            </ul>  
-        </nav>  
-        <a href="registration.html" class="cta-button">Join Now</a>  
-    </header>   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESLA Club VNIT Learn Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="tesla-logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">TESLA Club VNIT Nagpur</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="council.html">Council</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="photos.html">Gallery</a></li>
+                <li><a href="registration.html">Recruitment</a></li>
+                <li><a href="learn.html">Learn</a></li>
+            </ul>
+        </nav>
+        <a href="registration.html" class="cta-button">Join Now</a>
+    </header>
 
-    <main>  
+    <main>
         <section class="learn-section">
             <h2>Learn with TESLA Club</h2>
-
-                <iframe src="ppts/1.5KW 48V TD.pdf" frameborder="0"></iframe>
-                 <iframe src="https://drive.google.com/file/d/1_mlrmlXty0e21xoCDZ3bATvc70XyhOI7/preview"  height="500" width="1000"></iframe>
-
-            
-            <div class="card-container">
-                <div class="learn-card" onclick="openFile('ppts/IoT sensors.pdf', 'IOTsensors')">
-                    <h3>IOT sensors</h3>
-                    <span class="icon">📄</span>
-                </div>
-                <div class="learn-card" onclick="openFile('ppts/1.5KW 48V TD.pdf', '1.5KW 48V TD Overview')">
-                    <h3>1.5KW 48V TD Overview</h3>
-                    <span class="icon">📄</span>
-                </div>
-                <div class="learn-card" onclick="openFile('ppts/BEARING-2.pdf', 'Bearing Mechanics')">
-                    <h3>Bearing Mechanics</h3>
-                    <span class="icon">📄</span>
-                </div>
-                <div class="learn-card" onclick="openFile('ppts/ppt1.pdf', 'General PPT 1')">
-                    <h3>General PPT 1</h3>
-                    <span class="icon">📄</span>
-                </div>
-                <div class="learn-card" onclick="openFile('ppts/ppt2.pdf', 'General PPT 2')">
-                    <h3>General PPT 2</h3>
-                    <span class="icon">📄</span>
-                </div>
-                <div class="learn-card" onclick="openFile('ppts/safety Measures in tesla workshop.pdf', 'Safety Measures')">
-                    <h3>Safety Measures</h3>
-                    <span class="icon">📄</span>
-                </div>
-                <div class="learn-card" onclick="openFile('ppts/Speedometer in EV’s.pdf', 'Speedometer in EVs')">
-                    <h3>Speedometer in EVs</h3>
-                    <span class="icon">📄</span>
-                </div>
-            </div>
-        </section>
-        
-        <section id="fileViewerSection" class="file-viewer-section">
+            <!-- Google Drive Viewer Embedded File -->
+            <!-- File Viewer Section -->
+        <section id="fileViewerSection" class="file-viewer-section" style="display: none;">
             <h3 id="fileTitle">Document Viewer</h3>
             <iframe id="fileViewer" frameborder="0" width="100%" height="500px"></iframe>
             <button class="close-btn" onclick="closeViewer()">Close Viewer</button>
         </section>
-    </main>  
 
-    <footer>  
-        <div class="footer-container">  
-            <div class="footer-section">  
-                <h4>Contact Us</h4>  
-                <p>Email: teslavnit@gmail.com</p>  
-                <p>Instagram: <a href="https://www.instagram.com/teslavnit/">teslavnit</a></p>  
-                <p>LinkedIn: <a href="https://in.linkedin.com/company/tesla-club-of-innovation">teslaclubofinnovation</a></p>  
-                <p>Phone: Rushikesh: 9765862386</p>  
-            </div>  
-            <div class="footer-section">  
-                <h4>Location</h4>  
-                <p>Behind Architecture Department, VNIT Nagpur</p>  
-            </div>  
-            <div class="footer-section">  
-                <h4>Follow Us</h4>  
-                <p>Stay updated with our latest activities and events!</p>  
-            </div>  
-        </div>  
-        <div class="footer-bottom">  
-            <p>&copy; 2024 TESLA Club VNIT Nagpur. All Rights Reserved.</p>  
-        </div>  
-    </footer> 
+            <!-- Card Section -->
+            <div class="card-container">
+                <div class="learn-card" onclick="openFile('Motor Load Characteristic Curve')">
+                    <h3>Motor Load Characteristic Curve</h3>
+                    <img class="icon" src="ppts/Moter.png" alt="Motor Icon">
+                </div>
+                <div class="learn-card" onclick="openFile('Bearing Mechanics')">
+                    <h3>Bearing Mechanics</h3>
+                    <img class="icon" src="ppts/bearing.png" alt="Bearing Icon">
+                </div>
+                <div class="learn-card" onclick="openFile('General PPT 1')">
+                    <h3>General PPT 1</h3>
+                    <img class="icon" src="ppts/genaral.png" alt="General Icon">
+                </div>
+                <div class="learn-card" onclick="openFile('Braking Systems')">
+                    <h3>Braking Systems</h3>
+                    <img class="icon" src="ppts/brake.png" alt="Brake Icon">
+                </div>
+                <div class="learn-card" onclick="openFile('Safety Measures')">
+                    <h3>Safety Measures</h3>
+                    <img class="icon" src="ppts/safety.png" alt="Safety Icon">
+                </div>
+                <div class="learn-card" onclick="openFile('Speedometer in EVs')">
+                    <h3>Speedometer in EVs</h3>
+                    <img class="icon" src="ppts/speedometer.svg" alt="Speedometer Icon">
+                </div>
+            </div>
+        </section>
 
-    <script src="script.js"></script> 
-</body>  
+        
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: teslavnit@gmail.com</p>
+                <p>Instagram: <a href="https://www.instagram.com/teslavnit/">teslavnit</a></p>
+                <p>LinkedIn: <a href="https://in.linkedin.com/company/tesla-club-of-innovation">teslaclubofinnovation</a></p>
+                <p>Phone: Rushikesh: 9765862386</p>
+            </div>
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>Behind Architecture Department, VNIT Nagpur</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p>Stay updated with our latest activities and events!</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TESLA Club VNIT Nagpur. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Array of PDF links
+        const pdfLinks = {
+            "Motor Load Characteristic Curve": "https://drive.google.com/file/d/1_mlrmlXty0e21xoCDZ3bATvc70XyhOI7/preview",
+            "Bearing Mechanics": "https://drive.google.com/file/d/1EXAMPLE1/preview",
+            "General PPT 1": "https://drive.google.com/file/d/1EXAMPLE2/preview",
+            "Braking Systems": "https://drive.google.com/file/d/1EXAMPLE3/preview",
+            "Safety Measures": "https://drive.google.com/file/d/1EXAMPLE4/preview",
+            "Speedometer in EVs": "https://drive.google.com/file/d/1EXAMPLE5/preview"
+        };
+    
+        // Function to open file based on title
+        function openFile(title) {
+            const fileViewer = document.getElementById("fileViewer");
+            const fileTitle = document.getElementById("fileTitle");
+            const fileViewerSection = document.getElementById("fileViewerSection");
+    
+            // Set the title
+            fileTitle.textContent = title;
+    
+            // Get PDF link from the array
+            const viewerURL = pdfLinks[title];
+    
+            // Update iframe source
+            fileViewer.src = viewerURL || "about:blank"; // Default blank if link not found
+            fileViewerSection.style.display = "block";
+        }
+    
+        function closeViewer() {
+            const fileViewerSection = document.getElementById("fileViewerSection");
+            document.getElementById("fileViewer").src = ""; // Clear iframe source
+            fileViewerSection.style.display = "none";
+        }
+    </script>
+    
+</body>
 </html>
